@@ -1,0 +1,61 @@
+@import '../../styles/mixins.scss';
+
+.NewCommentForm {
+  padding: 7px;
+
+  @include onDesktop {
+    padding: 20px;
+  }
+
+  &__input {
+    border: none;
+    border-bottom: 1px solid #4d457b;
+    font-family: inherit;
+    font-size: 0.7rem;
+    padding: 10px 5px;
+    color: #4d457b;
+    width: 100%;
+  }
+
+  &__input-file-img,
+  &__input-file-text {
+    margin-bottom: 10px;
+  }
+
+  &__submit-button {
+    margin-top: 10px;
+  }
+
+  &__input-file-img-label,
+  &__input-file-text-label {
+    display: block;
+    font-size: 12px;
+  }
+
+  &__preview-button {
+    margin-bottom: 10px;
+  }
+  
+  &__validate-email-error,
+  &__validate-username-error,
+  &__validate-homepage-error,
+  &__validate-comment-error {
+    font-size: 10px;
+    font-weight: 700;
+    color: red;
+  }
+
+  &__validate-email-right,
+  &__validate-username-right,
+  &__validate-homepage-right,
+  &__validate-comment-right {
+    font-size: 10px;
+    font-weight: 700;
+    color: rgb(3, 158, 31);
+  }
+  
+  input[id="text-file"],
+  input[id="image-file"] {
+    width: 100%;
+  }
+}
