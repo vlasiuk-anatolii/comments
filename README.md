@@ -157,19 +157,22 @@ nodemon ./src/createServer.js
 ```
 
 5. After that you should see:
+
 ![Client](images-readme/nodemon.jpg)
 
 6. It means that your server is started.
 
 ### Installation DataBase
 
-1. Files for restore db exist in the folder backup-db which you got when cloned Client
+1. Files for restore db exist in the folder backup-db which you got when cloned Client/
+
 ![Client](images-readme/db-dump.jpg)
 2. Install on your computer PostgreSQL
 
 3. Creat empty database with name Post-Comments
 4. You should used utility of PostgreSQL such as pg_restore and restore data base with specified name.
-5. Restored database must consists 3 tables: 'users', 'posts', 'comments'
+5. Restored database must consists 3 tables: 'users', 'posts', 'comments'.
+
 ![DB](images-readme/db.jpg)
 6. If you reached this, it means that your have done all steps well.
 
@@ -181,20 +184,22 @@ You can use system!
 ![Flash](images-readme/flash.png) The server interacts with database through ORM "Sequelize". Sequelize escapes replacements, which avoids the problem SQL injection attacks.
 
 ![Flash](images-readme/flash.png) The server was implemented by using MVC architectural pattern.
+
 ![Flash](images-readme/server.jpg)
 
 ![Flash](images-readme/flash.png) In accordance with the policy of CORS was used cors node.js package.
 
-![Flash](images-readme/flash.png) In accordance with the policy of CORS was used cors node.js package.
-
 ![Flash](images-readme/flash.png) Nginx server was used for redirection data to 80 port.
+
 ![Nginx](images-readme/nginx.jpg)
 
 ## Deployment
 Was choosed a place for deploy - AWS.
 Was created instance on EC2 service.
+
 ![Ubuntu](images-readme/ubuntu.jpg)
 All elements of project were migrated from Windows platform to Ubuntu
+
 ![Ubuntu](images-readme/ubuntu2.jpg)
 The "backup" folder has files for restore database.
 The "front" folder has files for launch client.
