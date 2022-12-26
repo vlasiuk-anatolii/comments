@@ -158,9 +158,9 @@ export const PostsList: React.FC<Props> = ({ kindOfSort, checked }) => {
                       alt="avatar"
                     />
                   </div>
-                  <h3 className="PostsList__author">{objUser.user?.name}</h3>
+                  <h3 className="PostsList__author">{objUser.user?.username}</h3>
                   <p className="PostsList__when">{objUser.date}</p>
-                  <p className="PostsList__email"><i>{objUser.user?.name}</i></p>
+                  <p className="PostsList__email"><i>{objUser.user?.email}</i></p>
                 </div>
                 <div className="PostsList__box-button PostsList__box-right">
                   <button

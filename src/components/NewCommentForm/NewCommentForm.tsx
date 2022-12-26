@@ -1,5 +1,4 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
-/* eslint-disable no-lonely-if */
 import './NewCommentForm.scss';
 import React, { FormEvent, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
@@ -79,11 +78,9 @@ export const NewCommentForm: React.FC = () => {
           height = Math.round(height *= maxWidth / width);
           width = maxWidth;
         }
-      } else {
-        if (height > maxHeight) {
-          width = Math.round(width *= maxHeight / height);
-          height = maxHeight;
-        }
+      } else if (height > maxHeight) {
+        width = Math.round(width *= maxHeight / height);
+        height = maxHeight;
       }
 
       canvas.width = width;
