@@ -37,21 +37,33 @@ The first time you run the application, all the posts that were written by all a
 [Video](https://www.loom.com/share/ed9bacc1dbf946839bbbe44e018b683e)
 
 The header has a selector with which the user can select one of 10 authors and then the page will show posts only the selected author. When all the post is displayed, you can use sorting by "Username", "Email", "Date"(Date of post). The checkbox allows you to select the sorting mode. LIFO is installed by default.
+
 ![Sort](images-readme/sort.jpg)
+
 One post of the author contains the username avatar, the date of the author's post and email. The post has a “+Comment” and “xPost” button and text of the post itself.
+
 ![Post](images-readme/post.jpg)
-Users who read author's post can leave their comments by pressing the “+Comment” button. A window opens with all existing comments
+
+Users who read author's post can leave their comments by pressing the “+Comment” button. A window opens with all existing comments.
+
 ![Comments](images-readme/comments.jpg)
+
 and a form with the appropriate fields that the user must complete according to the requirements. When the auxiliary text is green, it means that the correct data is entered.
+
 ![Form](images-readme/form.gif)
 
 There is a possibility to attach a graphic file format JPG, GIF, PNG to the message. The picture is integrated into the user's comment in compressed format up to size 320x240. You can attach a text file in the TXT format, which is not larger than 100KB, the contents of the text file are integrated into the comment.
+
 ![Result-comment](images-readme/result_comment.jpg)
-By clicking the Preview button, you can preview your message, where the image will be displayed in its original size, 
+
+By clicking the Preview button, you can preview your message, where the image will be displayed in its original size,
+
 ![Preview](images-readme/preview.jpg)
+
 and when you publish a comment, the image will be compressed to the above size. If all the data is correct and you have completed the task of the widget Recapcha, you can click on the button "Add a comment", the comment will be in the list of all comments to the chosen post. You can delete a comment by pressing the “X” button opposite the comment text.
 
-The user can format his message by attaching the link, making the font bold, italic, and note that the given text will be a code element. 
+The user can format his message by attaching the link, making the font bold, italic, and note that the given text will be a code element.
+
 ![Preview](images-readme/rich-editor.jpg)
 
 Data is collected on the client and server side. All data is stored in the database on which the server is running.
@@ -167,6 +179,7 @@ nodemon ./src/createServer.js
 1. Files for restore db exist in the folder backup-db which you got when cloned Client/
 
 ![Client](images-readme/db-dump.jpg)
+
 2. Install on your computer PostgreSQL
 
 3. Creat empty database with name Post-Comments
@@ -174,6 +187,7 @@ nodemon ./src/createServer.js
 5. Restored database must consists 3 tables: 'users', 'posts', 'comments'.
 
 ![DB](images-readme/db.jpg)
+
 6. If you reached this, it means that your have done all steps well.
 
 You can use system!
@@ -198,9 +212,11 @@ Was choosed a place for deploy - AWS.
 Was created instance on EC2 service.
 
 ![Ubuntu](images-readme/ubuntu.jpg)
+
 All elements of project were migrated from Windows platform to Ubuntu
 
 ![Ubuntu](images-readme/ubuntu2.jpg)
+
 The "backup" folder has files for restore database.
 The "front" folder has files for launch client.
 The "server-ubuntu" folder has files for launch server.
